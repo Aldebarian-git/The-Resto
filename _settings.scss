@@ -1,0 +1,42 @@
+$text-color: rgb(224, 224, 224);
+$text-color2: #c79b5e;
+$price-color: #c39555;
+$bg-color: #21201e;
+
+@font-face {
+  font-family: "Allura";
+  src: url(/fonts/Allura/Allura-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(/fonts/Roboto/Roboto-Bold.ttf);
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #21201e;
+}
+
+.couverts {
+  margin: 2rem;
+}

@@ -1,0 +1,131 @@
+#reservation {
+  width: 80%;
+  max-width: 1160px;
+  height: 50vh;
+  display: grid;
+  margin: 4rem auto;
+  grid-template-columns: 30% 70%;
+  background-color: black;
+  @media screen and (max-width: 850px) {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    height: 100vh;
+    width: 90%;
+    margin-bottom: 10rem;
+  }
+
+  .reservation-left {
+    margin: 1.2rem;
+    border: 1px dashed rgba(255, 255, 255, 0.397);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    h2 {
+      font-family: "Allura";
+      color: $text-color2;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 0;
+
+      span {
+        font-family: "Poppins";
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 1.2rem;
+        line-height: 40px;
+        color: $text-color;
+      }
+    }
+    h3 {
+      color: $text-color2;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Roboto";
+      letter-spacing: 1px;
+      font-size: 1rem;
+    }
+    p {
+      color: $text-color2;
+      text-align: center;
+      font-size: 1rem;
+      font-family: "Roboto";
+    }
+    .week,
+    .week-end {
+      margin-bottom: 3rem;
+      p {
+        color: $text-color;
+        margin: 1rem;
+      }
+    }
+  }
+
+  .reservation-right {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @media screen and (max-width: 850px) {
+    }
+
+    h2 {
+      font-family: "Allura";
+      color: $text-color2;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 10px;
+      padding: 3rem 0 0;
+      @media screen and (max-width: 850px) {
+        padding: 0;
+      }
+
+      span {
+        font-family: "Poppins";
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 1.5rem;
+        line-height: 40px;
+        color: black;
+      }
+    }
+    button {
+      font-family: "Poppins";
+      letter-spacing: 5px;
+      color: $text-color;
+      background-color: #21201e;
+      border-radius: 25px;
+      border: none;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      font-weight: 100;
+      margin: 2rem 0;
+      @media screen and (max-width: 850px) {
+        margin: 0;
+      }
+    }
+    .reservation-form {
+      display: grid;
+      grid-template-columns: 33% 34% 33%;
+      margin-bottom: 30px;
+      > * {
+        -o-border: none;
+        padding: 10px 0;
+        margin: 10px;
+        background: none;
+        border: none;
+        outline: none !important;
+        border-bottom: 1px solid grey;
+        appearance: none;
+      }
+
+      @media screen and (max-width: 850px) {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+    }
+  }
+}

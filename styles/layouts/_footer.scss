@@ -1,0 +1,88 @@
+footer {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .footer-left {
+    width: 50%;
+    background-color: rgb(19, 19, 19);
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 2rem;
+    @media screen and (max-width: 850px) {
+      display: none;
+    }
+    h2 {
+      color: $text-color2;
+      font-family: "Allura";
+      text-transform: capitalize;
+      font-size: 2rem;
+      padding: 0.5rem 0;
+      font-weight: 200;
+    }
+    p {
+      color: rgba(255, 255, 255, 0.603);
+      font-family: "Roboto";
+      text-align: left;
+      line-height: 30px;
+      font-weight: 100;
+      font-size: 0.8rem;
+    }
+    .resto-sign {
+      width: 80%;
+    }
+  }
+  .footer-right {
+    width: 50%;
+    background-color: $bg-color;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 2rem;
+    @media screen and (max-width: 850px) {
+      width: 100%;
+      padding: 1rem;
+    }
+    h2 {
+      color: rgba(245, 245, 245, 0.692);
+      font-family: "Roboto";
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 1rem;
+      padding: 1rem 0;
+      @media screen and (max-width: 850px) {
+        font-size: 12px;
+      }
+    }
+    input {
+      border: none;
+      border: 1px solid rgba(167, 167, 167, 0.527);
+      background-color: $bg-color;
+      padding: 0.5rem;
+      width: 50%;
+      color: $text-color;
+      max-width: 260px;
+    }
+    .follow {
+      display: flex;
+      gap: 1rem;
+      padding: 2rem 0;
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 1rem;
+        @media screen and (max-width: 850px) {
+          gap: 1rem;
+        }
+        li {
+          color: rgba(167, 167, 167, 0.527);
+        }
+      }
+    }
+  }
+}
